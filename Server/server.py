@@ -30,7 +30,7 @@ def RSA_decrypt(msg,length,file_count):
         pt = k + 96
         decrypt_msg[i] = int(pt)
         i = i + 1
-    file_img = open("C:\\Users\\hosam\\Desktop\\Received Bmp\\IMG_"+str(file_count)+".bmp","wb")
+    file_img = open("C:\Users\X-Calibre\Downloads"+str(file_count)+".bmp","wb")
     file_img.write(decrypt_msg)
     file_img.close();
     lock.release()
